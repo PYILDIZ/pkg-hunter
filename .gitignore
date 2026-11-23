@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+
+# Local scan state: database, cached popular-package list, generated reports
+data/
+reports/

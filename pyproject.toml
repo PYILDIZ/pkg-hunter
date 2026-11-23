@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkg-hunter"
+version = "0.1.0"
+description = "Watch PyPI for newly published packages and flag likely-malicious ones with static analysis. Never installs or runs anything."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+pkghunter = "pkghunter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pkghunter*"]
